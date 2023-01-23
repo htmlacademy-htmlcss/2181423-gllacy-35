@@ -25,8 +25,13 @@
 body {
   font-family: "Inter-400", sans-serif;
   font-style: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
+  height: 100%;
+}
+
+.pink {
+  background-color: #FEAFC3;
 }
 
 *,
@@ -45,6 +50,42 @@ li {
 }
 
 .wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
   width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+}
+
+.menu ul{
+  width: 422px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 16px;
+}
+
+.information ul {
+  width: 431px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 164px;
+}
+
+.phone-header {
+  font-family: "Inter-700", sans-serif;
+}
+
+.background-search {
+  width: 32px;
+  height: 32px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 50%;
+}
+
+.search-header {
   margin: 0 auto;
 }
