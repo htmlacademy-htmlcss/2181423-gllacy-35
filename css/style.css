@@ -77,7 +77,12 @@ li {
 
 }
 
-.information ul {
+.information {
+  justify-content: center;
+  align-content: center;
+}
+
+.information-block {
   width: 431px;
   display: flex;
   justify-content: space-between;
@@ -102,21 +107,17 @@ li {
   align-items: center;
 }
 
-.search-header {
-  justify-content: center;
-  align-content: center;
-}
 
 .main-information {
   display: flex;
   min-height: 554px;
 }
 
-.title {
+.title-block {
   width: 530px;
 }
 
-h1 {
+.title {
   font-family: "Inter-900", sans-serif;
   font-weight: 900;
   font-size: 36px;
@@ -126,7 +127,7 @@ h1 {
   margin-left: 70px;
   color: #2D3440;
 }
-.title p {
+.title-block p {
   font-size: 18px;
   margin-left: 70px;
   margin-bottom: 48px;
@@ -142,6 +143,7 @@ h1 {
   outline: none;
   box-shadow: 0px 0px 0px 4px rgba(250, 249, 249, 0.54);
   border: 5px solid white;
+  cursor: pointer;
 }
 
 .gallery {
@@ -157,7 +159,6 @@ h1 {
 
 .ice-cream-back-1 {
   margin-left: 58px;
-  margin-right: 58px;
 }
 
 .box {
@@ -177,11 +178,11 @@ h1 {
   z-index: -1;
 }
 
-.box-small-1 {
+.box-small {
   position: relative;
 }
 
-.box-small-1::before {
+.box-small::before {
   content: "";
   position: absolute;
   background-color: #fff;
@@ -194,25 +195,8 @@ h1 {
   z-index: -1;
 }
 
-.box-small-2 {
-  position: relative;
-}
-
-.box-small-2::before {
-  content: "";
-  position: absolute;
-  background-color: #fff;
-  top: 20%;
-  left: -15px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  opacity: 0.5;
-  z-index: -1;
-}
-
 .social-media {
-  justify-content: ;
+  justify-content: space-between;
 }
 
 .circles-banner {
@@ -263,11 +247,11 @@ h2 {
 .wrapper-inner ul {
   display: flex;
   justify-content: space-between;
-  padding: 0px;
+  padding: 0;
+  margin: 0;
 }
 
-.sale-1,
-.sale-2 {
+.sale {
   width: 566px;
   background-color: #FF7799;
   border-radius: 10px;
@@ -282,7 +266,7 @@ h3 {
   color: #2D3440;
 }
 
-.sale-1 p {
+.sale p {
   width: 328px;
   line-height: 22px;
   margin-left: 36px;
@@ -300,21 +284,22 @@ h3 {
   margin-top: 28px;
   margin-bottom: 28px;
   margin-left: 36px;
+  cursor: pointer;
 }
 
-.ruspberry-in-cone {
+.image-1 {
   position: absolute;
   margin-top: -166px;
   margin-left: 172px;
 }
 
-.marshmallow {
+.image-2 {
 position: absolute;
     margin-top: -166px;
     margin-left: 172px;
 }
 
-.sale-2 p {
+.sale p {
   width: 328px;
   line-height: 22px;
   margin-left: 36px;
@@ -329,7 +314,7 @@ position: absolute;
   display: flex;
   justify-content: space-between;
   text-align: center;
-  padding: 0px;
+  padding: 0;
 }
 
 .items li {
@@ -404,6 +389,69 @@ color: #2D3440;
 }
 
 .descr {
+  display: grid;
+  grid-template-columns: 506px 506px;
+  grid-gap: 31px 40px;
+  justify-content: center;
+}
+
+.block {
+  margin: 0;
+  padding-left: 64px;
+}
+
+.block-text {
+  margin: 0;
+}
+
+.block-1,
+.block-2,
+.block-3,
+.block-4 {
+  position: relative;
+}
+
+.block-1::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/svg/ice-cream-icon.svg);
+  width: 48px;
+  height: 48px;
+  top: 0;
+  left: 0;
+}
+
+.block-2::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/svg/leaf.svg);
+  width: 48px;
+  height: 48px;
+  top: 0;
+  left: 0;
+}
+
+.block-3::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/svg/cow.svg);
+  width: 48px;
+  height: 48px;
+  top: 0;
+  left: 0;
+}
+
+.block-4::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/svg/thermometer.svg);
+  width: 48px;
+  height: 48px;
+  top: 0;
+  left: 0;
+}
+
+/* .descr {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -429,7 +477,7 @@ color: #2D3440;
 .block4 {
   display: flex;
   gap: 16px;
-}
+} */
 
 .news {
   margin-top: 80px;
